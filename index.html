@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelajaran Komputer Lengkap</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f3e5f5);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #00acc1, #8e24aa);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #ddd;
+      z-index: 10;
+    }
+    nav a {
+      padding: 12px 18px;
+      text-decoration: none;
+      color: #00acc1;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #8e24aa; }
+
+    section {
+      max-width: 950px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    section h2 {
+      color: #8e24aa;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+    section p { margin-bottom: 10px; }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    ul, ol { margin: 15px 0 15px 25px; }
+    .highlight {
+      background: #e0f2f1;
+      padding: 10px;
+      border-left: 5px solid #00acc1;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: linear-gradient(90deg,#00acc1,#8e24aa);
+      color: white;
+      margin-top: 40px;
+    }
+    @keyframes fadeIn {
+      from {opacity:0;transform:translateY(30px);}
+      to {opacity:1;transform:translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>💻 Pembelajaran Komputer Lengkap</h1>
+  <p>Belajar komputer dan jaringan dengan mudah, aesthetic, dan jelas</p>
+</header>
+
+<nav>
+  <a href="#pengertian">Pengertian</a>
+  <a href="#komponen">Komponen</a>
+  <a href="#cara-kerja">Cara Kerja</a>
+  <a href="#jaringan">Jaringan</a>
+  <a href="#os">Sistem Operasi</a>
+  <a href="#tips">Tips Belajar</a>
+</nav>
+
+<section id="pengertian">
+  <h2>1. Pengertian Komputer</h2>
+  <p>Komputer adalah perangkat elektronik yang mampu menerima data, memprosesnya, 
+     dan menghasilkan informasi yang berguna. Komputer dapat digunakan untuk 
+     mengetik, bermain game, browsing, hingga membuat program.</p>
+  <img src="https://i.ibb.co/SX3zK0W/computer-basic.jpg" alt="Pengertian Komputer">
+  <div class="highlight">
+    Inti komputer: <b>Input → Proses → Output → Storage</b>
+  </div>
+</section>
+
+<section id="komponen">
+  <h2>2. Komponen Komputer</h2>
+  <p>Komputer tersusun dari <b>Hardware</b> dan <b>Software</b>:</p>
+  <ul>
+    <li><b>Hardware</b> - Bagian fisik: CPU, RAM, GPU, keyboard, monitor</li>
+    <li><b>Software</b> - Program: Windows, Linux, Photoshop, Game</li>
+  </ul>
+  <img src="https://i.ibb.co/zFtd8jR/hardware-software.png" alt="Hardware dan Software">
+  <p>Selain itu ada <b>Brainware</b> yaitu manusia yang mengoperasikan komputer.</p>
+</section>
+
+<section id="cara-kerja">
+  <h2>3. Cara Kerja Komputer</h2>
+  <ol>
+    <li><b>Input</b> - Masukan data via keyboard, mouse, scanner</li>
+    <li><b>Process</b> - CPU memproses data</li>
+    <li><b>Output</b> - Hasil ditampilkan di monitor atau printer</li>
+    <li><b>Storage</b> - Data disimpan di HDD/SSD</li>
+  </ol>
+  <img src="https://i.ibb.co/Zf7Sdvj/io.jpg" alt="Proses Komputer">
+</section>
+
+<section id="jaringan">
+  <h2>4. Jaringan Komputer</h2>
+  <p>Jaringan komputer menghubungkan komputer agar bisa berbagi data & sumber daya.</p>
+  <ul>
+    <li><b>LAN</b> (Local Area Network) - Skala lokal, lab sekolah</li>
+    <li><b>MAN</b> (Metropolitan Area Network) - Skala kota</li>
+    <li><b>WAN</b> (Wide Area Network) - Skala dunia, Internet</li>
+    <li><b>WLAN</b> - LAN tanpa kabel (WiFi)</li>
+  </ul>
+  <img src="https://i.ibb.co/vs7BS2x/network.jpg" alt="Jaringan Komputer">
+
+  <p>Topologi Jaringan:</p>
+  <ol>
+    <li><b>Star</b> - Semua PC ke switch/hub (paling sering)</li>
+    <li><b>Bus</b> - Satu kabel utama</li>
+    <li><b>Ring</b> - Bentuk lingkaran</li>
+    <li><b>Mesh</b> - Semua saling terhubung</li>
+  </ol>
+  <img src="https://i.ibb.co/6gXtdJP/topologi.png" alt="Topologi Jaringan">
+</section>
+
+<section id="os">
+  <h2>5. Sistem Operasi</h2>
+  <p>Sistem operasi adalah software utama yang mengatur hardware dan software lain.</p>
+  <ul>
+    <li><b>Windows</b> - Mudah dipakai, populer</li>
+    <li><b>Linux</b> - Gratis, open source, ringan</li>
+    <li><b>MacOS</b> - Eksklusif untuk Apple</li>
+  </ul>
+  <img src="https://i.ibb.co/VL8F8K2/os.jpg" alt="Sistem Operasi">
+</section>
+
+<section id="tips">
+  <h2>6. Tips Belajar Komputer untuk Pemula</h2>
+  <ul>
+    <li>Belajar <b>sedikit tapi rutin</b> setiap hari</li>
+    <li>Sering <b>praktek langsung</b>, bukan teori doang</li>
+    <li>Coba <b>ngoding HTML/JS</b> untuk latihan logika</li>
+    <li>Jangan takut <b>error</b>, karena dari error kita belajar</li>
+  </ul>
+  <div class="highlight">
+    💡 Kunci sukses: Konsisten dan berani mencoba lebih dulu dari temanmu!
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Website Pembelajaran Komputer | Dibuat untuk Adit</p>
+</footer>
+
+</body>
+</html>
